@@ -17,6 +17,7 @@ char in_row[MAX_LEN];
 
 int mode;
 char *token;
+char nama_file[1000];
 int i = 0;
 
 char search;
@@ -31,7 +32,8 @@ typedef struct Pokemon {
 //Fungsi Menghitung Jumlah Baris pada file
 int countrow(){
     FILE *file;
-    file = fopen("pokedex1.txt", "r");
+    scanf("%s", &nama_file);
+    file = fopen(nama_file, "r");
     while (!feof(file)){
         fgets(in_row, MAX_LEN,file);
         count++;
