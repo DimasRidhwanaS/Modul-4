@@ -93,7 +93,7 @@ void searchID(Pokemon *p, int n, char *ID) {
 void searchName(Pokemon *p, int n, char *NAMA) {
     bool status = is_substring(p[n].name, NAMA);
     if (status == true){
-        printf("\nPokemon yang memiliki nama %s belum ditangkap!",NAMA);
+        printf("\nPokemon dengan nama %s belum ditangkap!",NAMA);
     } else{
         printf("\nPokemon dengan nama %s belum ditangkap!", NAMA);
     }
@@ -104,7 +104,7 @@ void searchType(Pokemon *p, int n, char *type) {
     bool status = is_substring(p[n].type, type);
     if (status == true){
         // printPokemon(p, n);
-        printf("\nPokemon yang memiliki type %s belum ditangkap!",type);
+        printf("\nPokemon dengan type %s belum ditangkap!",type);
     } else{
         printf("\nPokemon dengan type %s belum ditangkap!", type);
     }   
