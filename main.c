@@ -32,7 +32,6 @@ typedef struct Pokemon {
 //Fungsi Menghitung Jumlah Baris pada file
 int countrow(){
     FILE *file;
-    scanf("%s", nama_file);
     file = fopen(nama_file, "r");
     while (!feof(file)){
         fgets(in_row, MAX_LEN,file);
@@ -113,9 +112,9 @@ void searchType(Pokemon *p, int n, char *type) {
 int main(){
     //Open File
     FILE *file;
+    scanf("%s", &nama_file);
     count_row = countrow();
-    // printf("Rows : %d\n", count_row);
-    file = fopen("pokedex1.txt", "r");
+    file = fopen(nama_file, "r");
     
     //Dynamic Array Using Struct
     Pokemon *data = malloc(count_row*sizeof(Pokemon));
