@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "pokedex1.txt\r\nChar",
+      "output": "ID: #0004\r\nNama: Charmander\r\nType: Fire\r\n\r\nID: #0006\r\nNama: Charizard\r\nType: Fire,Flying",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex2.txt\r\nnormal",
+      "output": "ID: #0019\r\nNama: Rattata\r\nType: Normal\r\n\r\nID: #0039\r\nNama: Jigglypuff\r\nType: Normal,Fairy",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex3.txt\r\n25",
+      "output": "ID: #0025\r\nNama: Pikachu\r\nType: Electric",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex1.txt\r\ngyarados",
+      "output": "Pokemon dengan nama gyarados belum ditangkap!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex4.txt\r\n8",
+      "output": "ID: #0008\r\nNama: Wartortle\r\nType: Water\r\n\r\nID: #0068\r\nNama: Machamp\r\nType: Fighting\r\n\r\nID: #0158\r\nNama: Totodile\r\nType: Water\r\n\r\nID: #0807\r\nNama: Zeraora\r\nType: Electric\r\n\r\nID: #1008\r\nNama: Miraidon\r\nType: Electric,Dragon",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "6",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex5.txt\r\nCHAMP",
+      "output": "ID: #0068\r\nNama: Machamp\r\nType: Fighting",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "7",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex2.txt\r\nrock",
+      "output": "Pokemon dengan type rock belum ditangkap!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "8",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex3.txt\r\n999",
+      "output": "Pokemon yang memiliki ID 999 belum ditangkap!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "9",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex1.txt\r\nPikachu",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./main",
+      "input": "pokedex5.txt\r\nTotodile",
+      "output": "ID: #0158\r\nNama: Totodile\r\nType: Water",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}

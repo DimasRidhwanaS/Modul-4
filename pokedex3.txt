@@ -1,0 +1,8 @@
+1
+#0025;Pikachu;Electric
+#0004;Charmander;Fire
+#0007;Squirtle;Water
+#0001;Bulbasaur;Grass,Poison
+#0006;Charizard;Fire,Flying
+#0039;Jigglypuff;Normal,Fairy
+#0103;Cubone;Ground

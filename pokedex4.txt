@@ -1,0 +1,7 @@
+1
+#0025;Pikachu;Electric
+#0008;Wartortle;Water
+#0068;Machamp;Fighting
+#0158;Totodile;Water
+#0807;Zeraora;Electric
+#1008;Miraidon;Electric,Dragon
