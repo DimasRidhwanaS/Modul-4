@@ -112,7 +112,7 @@ int main(){
     //Open File
     FILE *file;
     count_row = countrow();
-    printf("Rows : %d\n", count_row);
+    // printf("Rows : %d\n", count_row);
     file = fopen("pokedex1.txt", "r");
     
     //Dynamic Array Using Struct
@@ -120,7 +120,7 @@ int main(){
 
     // Mengambil Mode dari baris pertama file
     mode = atoi((char*)fgets(in_row, MAX_LEN,file));
-    printf("Mode : %d\n", mode);
+    // printf("Mode : %d\n", mode);
 
     while(!feof(file) && count<count_row){
       //   printf("Looping Baris ke %d\n", count+1);               //----DEBUG
