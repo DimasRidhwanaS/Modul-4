@@ -32,7 +32,7 @@ typedef struct Pokemon {
 //Fungsi Menghitung Jumlah Baris pada file
 int countrow(){
     FILE *file;
-    scanf("%s", &nama_file);
+    scanf("%s", nama_file);
     file = fopen(nama_file, "r");
     while (!feof(file)){
         fgets(in_row, MAX_LEN,file);
@@ -154,15 +154,15 @@ int main(){
 
     if (mode == 1){
         printf("Program mencari ID pokemon: ");
-        scanf("%s", &sub_ID);        
+        scanf("%s", sub_ID);        
         searchID(data, count, sub_ID);
     } else if(mode == 2){
         printf("Program mencari Nama pokemon: ");
-        scanf("%s", &sub_Nama);   
+        scanf("%s", sub_Nama);   
         searchName(data, count, sub_Nama);
     } else if(mode == 3){
         printf("Program mencari Type pokemon: ");
-        scanf("%s", &sub_Type);
+        scanf("%s", sub_Type);
         searchType(data, count, sub_Type);
     }else{
         return 0;
